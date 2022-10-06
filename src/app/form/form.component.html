@@ -47,11 +47,11 @@
                     </mat-form-field>
                     <mat-form-field class="form-group" appearance="legacy">
                         <mat-label>Adresse mail</mat-label>
-                        <input matInput placeholder="name@exemple.com" [(ngModel)]="client.email">
+                        <input matInput placeholder="name@exemple.com" [(ngModel)]="client.email" type="email">
                     </mat-form-field>
                     <mat-form-field class="form-group" appearance="legacy">
                         <mat-label>Numéro de téléphone</mat-label>
-                        <input matInput appInputNumbers="10" placeholder="06 00 00 00 00" [(ngModel)]="client.phone"
+                        <input matInput type="tel" appInputNumbers="14" placeholder="06 00 00 00 00" [(ngModel)]="client.phone"
                             required>
                     </mat-form-field>
                 </div>
